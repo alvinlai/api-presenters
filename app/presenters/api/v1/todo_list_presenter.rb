@@ -12,7 +12,7 @@ class Api::V1::TodoListPresenter < Api::V1::BasePresenter
           :id => object.id,
           :name => object.name,
           :awesome => true,
-          :message => subject.hello
+          :message => object.hello
         }
       else
         object.as_json
